@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+               <html>
+               <head>
+               <style>
+               table {
+                 font-family: arial, sans-serif;
+                 border-collapse: collapse;
+                 width: 100%;
+               }
+               
+               td, th {
+                 border: 1px solid black;
+                 text-align: left;
+                 padding: 8px;
+               }
+               
+               tr:nth-child(even) {
+                 background-color: #dddddd;
+               }
+               </style>
+               </head>
+               <body>
+<html>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Team1</th>
+            <th>Team2</th>
+            <th>Bidding info</th>
+        </tr>
+    </thead>
+    <tbody *ngFor='let match of matches'>
+        <tr>
+            <td>{{match.id}}</td>
+            <td>{{match.Team1}}</td>
+            <td>{{match.Team2}}</td>
+      
+
+     
+
+         </tr>
+         </tbody>
+         </table>
+         
+         <a [routerLink]='["/details"]' style="text-align: center;">Match Details</a>&nbsp;&nbsp;
+         <a [routerLink]='["/delete",id]' style="text-align: center;">Delete</a>
+    
+  
+
+
+         </html>

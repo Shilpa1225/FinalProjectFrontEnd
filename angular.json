@@ -24,10 +24,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          },
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+      ],
+      "scripts": [
+        "node_modules/jquery/dist/jquery.min.js",
+        "node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ]
+    },
+         
           "configurations": {
             "production": {
               "fileReplacements": [
@@ -119,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Project1"
+    }
+  },
+  "defaultProject": "Project1",
+  "cli": {
+    "analytics": "5f4e51c3-a53d-4723-b57c-4aa5f5b701d1"
+  }
 }
