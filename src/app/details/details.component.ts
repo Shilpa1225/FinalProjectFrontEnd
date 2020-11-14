@@ -14,7 +14,7 @@ export class DetailsComponent implements OnInit {
   constructor(private dataservice:DataService) { }
 
   ngOnInit(): void {
-    this.dataservice.getdetails().subscribe(matches=>this.matches=this.matches);
+    this.dataservice.getMatchDetails().subscribe(matches=>this.matches=this.matches);
   }
   }
 

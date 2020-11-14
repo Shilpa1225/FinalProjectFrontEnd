@@ -13,7 +13,7 @@ export class ListComponent implements OnInit {
   constructor(private dataservice:DataService) { }
 
   ngOnInit(): void {
-    this.dataservice.getMatches().subscribe(matches=>this.matches=this.matches);
+   
   }
 
 }

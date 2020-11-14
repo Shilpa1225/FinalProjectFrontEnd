@@ -14,7 +14,7 @@
 <div class="container">
     
   <h2>Match Details</h2>
- 
+
   <ul class="list-group">
     <li class="list-group-item">Match ID <span class="badge">01</span></li>
     <li class="list-group-item">Team1 <span class="badge">Mumbai Indians</span></li>
@@ -22,17 +22,16 @@
    <li class="list-group-item">Stadium <span class="badge">LB</span></li>
     <li class="list-group-item">Winner <span class="badge">Mumbai Indians</span></li>
     <li class="list-group-item">Status <span class="badge">Won</span></li>
+    <li class="list-group-item">Time <span class="badge">7:30</span></li>
   </ul>
 
-</div>
+  <button type="button" onclick="alert('Bidding Started')">Start Bidding</button>
 
-      <p align ="centre">
-    <button  (click)="list()"  class="btn btn-info" style="margin:auto" > Start Bidding</button>
-              </p>
-              
-              
+  <div>
+     <a [routerLink]='["/list"]' style="text-align: center;">Go To Home Page<b></b></a>
+              </div>
+            
+           
+         
              
-
              
-              </body>
-              </html>

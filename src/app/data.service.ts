@@ -6,22 +6,14 @@ import {Observable} from 'rxjs';
 })
 export class DataService {
 
-  url='http://localhost:8080/web';
+  url='http://localhost:8088/web';
 
 
   constructor(private http:HttpClient) { }
   
-  getdetails():Observable<any>
+  getMatchDetails():Observable<any>
   {
     return this.http.get(this.url.concat("/match"))
   }
 
-  delete(id:number):Observable<any>
-  {
-    return this.http.get(this.url.concat("/match/Delete/")+id+"");
-  }
-  getMatches():Observable<any>
-  {
-    return this.http.get(this.url.concat("/match"))
-  }
 }

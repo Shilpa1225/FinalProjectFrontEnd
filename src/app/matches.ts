@@ -1,3 +1,5 @@
+import { Time } from '@angular/common';
+
 export class Match{
     id:number;
     Team1:String;
@@ -6,4 +8,5 @@ export class Match{
     Status:String;
      Stadium:String;
      Date:Date;
+     Time:Time;
 }

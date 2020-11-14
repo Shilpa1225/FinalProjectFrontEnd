@@ -37,16 +37,16 @@
             <td>{{match.Team1}}</td>
             <td>{{match.Team2}}</td>
       
+        </tr>
+           
 
-     
-
-         </tr>
+         
          </tbody>
          </table>
+         <td><a [routerLink]='["/details"]' style="text-align: center;">Match Details</a>&nbsp;&nbsp;
+          <button type="button" onclick="alert('Bidding Started')">Cancel Bidding</button></td>
+     
          
-         <a [routerLink]='["/details"]' style="text-align: center;">Match Details</a>&nbsp;&nbsp;
-         <a [routerLink]='["/delete",id]' style="text-align: center;">Delete</a>
-    
   
 
 
