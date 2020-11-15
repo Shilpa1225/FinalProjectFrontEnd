@@ -31,7 +31,7 @@
             <th>Bidding info</th>
         </tr>
     </thead>
-    <tbody *ngFor='let match of matches'>
+   <!--<tbody *ngFor='let match of matches'>
         <tr>
             <td>{{match.id}}</td>
             <td>{{match.Team1}}</td>
@@ -41,12 +41,38 @@
            
 
          
-         </tbody>
-         </table>
+         </tbody>-->
+
+           <tbody>
+             <tr>
+               <td>1</td>
+               <td>Royal Challangers Bengaluru</td>
+               <td>Delhi Captains</td>
+           
+
+
+
+               
          <td><a [routerLink]='["/details"]' style="text-align: center;">Match Details</a>&nbsp;&nbsp;
-          <button type="button" onclick="alert('Bidding Started')">Cancel Bidding</button></td>
-     
-         
+          <button type="button" disabled onclick="alert('Bidding Started')">Cancel Bidding</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Kolkata Night Riders</td>
+          <td>KingsX1 Punjab</td>
+      
+
+
+
+          
+    <td><a [routerLink]='["/details"]' style="text-align: center;">Match Details</a>&nbsp;&nbsp;
+     <button type="button" disabled onclick="alert('Bidding Started')">Cancel Bidding</button></td>
+   </tr>
+
+
+      </tbody>
+
+         </table>
   
 
 

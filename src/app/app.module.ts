@@ -9,13 +9,15 @@ import { DeleteComponent } from './delete/delete.component';
 import { DataService } from './data.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BiddingComponent } from './bidding/bidding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     DetailsComponent,
-    DeleteComponent
+    DeleteComponent,
+    BiddingComponent
   ],
   imports: [
     BrowserModule,

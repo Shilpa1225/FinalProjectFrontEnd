@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: greenyellow;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <h3>Team 1</h3>
+     
+     <td>Sun Risers Hyderabad</td>
+      <td><button class="button" onclick="alert('Bidding Started')">Start Bidding</button>
+        <button class="button button2"  onclick="alert('Bidding Cancelled')">Cancel Bidding</button></td>
+    </div>
+  </div>
+
+ 
+  <div class="column">
+    <div class="card">
+      <h3>Team 2</h3>
+      <tr>
+          <td>Kings X1 punjab</td>
+          <td><button class="button" onclick="alert('Bidding Started')">Start Bidding</button>
+            <button class="button button2"  onclick="alert('Bidding Cancelled')">Cancel Bidding</button></td>
+      </tr>
+      <!--<tbody *ngFor='let match of matches'>
+        <tr>
+            
+            <td>{{match.Team1}}</td>
+            <td>{{match.Team2}}</td>
+      </tr>
+         </tbody>-->
+    
+    </div>
+  </div>
+  
+  
+</div>
+
+</body>
+
+<a [routerLink]='["/list"]' style="text-align: center;"> Go Back to Home Page<b></b></a>
+</html>
